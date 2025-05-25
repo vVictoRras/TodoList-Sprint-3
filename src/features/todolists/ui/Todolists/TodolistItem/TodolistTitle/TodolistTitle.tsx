@@ -4,6 +4,7 @@ import {EditableSpan} from "../../../../../../../common/components/EditibleSapn/
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
 import {Todolist} from "@/app/App.tsx";
+import styles from "./TodolistTitle.module.css"
 
 type Props = {
     todolist: Todolist
@@ -23,7 +24,7 @@ const changeTodolistTitleHandler = (title: string) => {
 }
 
     return (
-        <div className={'container'}>
+        <div className={styles.container}>
             <h3>
                 <EditableSpan value={title} onChange={changeTodolistTitleHandler} />
             </h3>

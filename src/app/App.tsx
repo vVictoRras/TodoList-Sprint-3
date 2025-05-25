@@ -1,4 +1,4 @@
-import './App.css'
+import style from'./App.module.css'
 import {ThemeProvider} from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import {useAppSelector} from "../../common/hooks/useAppSelector.ts";
@@ -29,7 +29,7 @@ export const App = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <div className={'app'}>
+            <div className={style.app}>
                 <CssBaseline/>
                 <Header/>
                 <Main/>
